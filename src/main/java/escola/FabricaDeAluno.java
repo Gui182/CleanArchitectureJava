@@ -17,4 +17,8 @@ public class FabricaDeAluno {
     public Aluno criar() {
         return this.aluno;
     }
+
+    public static void main(String[] args) {
+        
+    }
 }
