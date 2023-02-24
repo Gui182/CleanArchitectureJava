@@ -1,8 +1,11 @@
 package br.com.alura.escola.dominio.aluno;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
+
+import br.com.alura.escola.shared.dominio.CPF;
 
 class CPFTest {
 
@@ -15,7 +18,7 @@ class CPFTest {
 				() -> new CPF(""));
 		
 		assertThrows(IllegalArgumentException.class,
-				() -> new CPF("12345678900"));
+				() -> new CPF("1234567-8900"));
 	}
 
 	@Test
